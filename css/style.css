@@ -290,15 +290,16 @@ body {
     border: 1px solid #f4f4f4;
     margin-bottom: 40px;
     padding: 0 0 15px;
+    left: 50px;
     
 }
 
 .preview {
-  border: 1px solid #f4f4f4;
+  border: 1px solid rgb(27, 112, 240);
   margin-bottom: 40px;
   padding: 0 0 15px;
-  height: 150px;
-  width: 50%;
+  height: 140px;
+  width: 600px;
 }
 
 .preview:hover {
@@ -319,6 +320,7 @@ body {
 }
 
 .single-preview:hover {
+  left: 50px;
     box-shadow: 0 8px 10px 0 rgb(31, 127, 206);
     -webkit-transform: translateY(-3px);
     -moz-transform: translateY(-3px);
@@ -384,18 +386,34 @@ body {
 /* end of content */
 
 
-
 .tab {
   margin-bottom: 30px;
   overflow: hidden;
-  position: relative;
-}
-.product-thumb {
-  float: left;
-  width: 250px;
-  height: 250px;
 }
 
+.flex{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  
+}
+
+.categ{
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-thumb {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 100%
+  
+}
+
+/* end of index page categories section */
 
 .product-content {
   float: right;
@@ -403,35 +421,57 @@ body {
   padding: 20px;
   overflow: hidden;
   background-color: white;
-  
+}  
 
+.overlayFade a {
+  color: rgb(216, 29, 92);
 }
-.category {
-  position: absolute;
-  width: 100%;
-  height: 250px;
+
+.container img { 
+  padding-left: 50px;
+  width: 350px; 
+  height: 250px; 
+  
+} 
+
+.container { 
+  position: relative; 
+  width: 400px; 
+  height: auto;
+  
+} 
+
+.contain{
+  position: relative; 
+  width: 600px; 
+  height: auto;
+}
+
+.overlay { 
+  position: absolute; 
+  opacity: 0; 
   padding-top: 100px;
   text-transform: uppercase;
+  text-align: center;
   background-color: rgba(0,0,0,0.8);
   color: white;
   opacity: 0;
   filter: alpha(opacity=0);
-  transform: scale(0);
-}
- 
-.category a {
-  color: #e84c3d;
-}
-
-.tab:hover .category {
-  opacity: 1;
-  filter: alpha(opacity=100);
-  width: 100%;
   transform: scale(1);
-  -moz-transform: scale(1);
-  -o-transform: scale(1);
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
+  transition: all 0.5s ease-in-out; 
+} 
+
+.container:hover .overlay { 
+  opacity: 1; 
+} 
+
+.overlayFade { 
+  height: 150px; 
+  width: 350px; 
+  top: 0; 
+  left: 50px; 
+  background-color: rgba(0,0,0,0.8);
+ 
 }
 
 .product-image{
@@ -470,6 +510,7 @@ label {
 .checkout {
   float: right;
   border: 0;
+  width: 190px;
   margin-top: 20px;
   padding: 6px 25px;
   background-color: #6b6;
