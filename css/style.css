@@ -4,9 +4,10 @@ body {
 	line-height: 1.7em;
 	letter-spacing: 1px;
 	font-family: Georgia, "Times New Roman", Times, serif;
-	font-size: 12px;
+  font-size: 12px;
+  background-color: rgb(231, 230, 230);
   color: #333;
-  background-color: lightcoral cyan;
+  
   
   
 }
@@ -219,6 +220,37 @@ body {
     text-transform: uppercase;
     font-size: 72px;
     letter-spacing: 4px;
+    z-index: 1;
+    
+}
+
+.shop-wrap-inside h1::before{
+  content: 'Denver LTD.';
+  padding-top: 47px;
+  position: absolute;
+  right: 25%;
+  width: 50%;
+  height: 25%;
+  top: 250px;
+  animation: animate 3s linear backwards;
+}
+
+
+@keyframes animate{
+  0%{
+      right: 30%
+  }
+  60%{
+      right: -60%;
+  }
+
+}
+
+.shop-wrap-inside h1 span{
+  color: #ee0a7c;
+  text-transform: uppercase;
+  font-size: 72px;
+  letter-spacing: 4px;
 }
 
 .shop-wrap-inside span {
@@ -461,7 +493,8 @@ body {
   transition: all 0.5s ease-in-out; 
 } 
 
-.container:hover .overlay { 
+
+.container:hover .overlay{ 
   opacity: 1; 
 } 
 
