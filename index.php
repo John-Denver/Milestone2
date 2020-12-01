@@ -21,7 +21,7 @@
     <div id="header_bar">
         <div id="header">
           <div class="right"></div>
-          <h1><a href="#"> <img src="img/logo.png" alt="lang" /> <span>Denver Store</span> </a></h1>
+          <h1><a href="admn"> <img src="img/logo.png" alt="lang" /> <span>Denver Store</span> </a></h1>
         </div>
 
         <div id="search_box">
@@ -37,12 +37,11 @@
                 
                         <div class="list-menu">
                             <ul>
-                                <li><a href="https://john-denver.github.io/Milestone3/" target="_blank">ADMIN</a></li>
-                                <li><a href="#">Login</a></li>
-                                <li><a href="product.html">Products</a></li>
-                                <li><a href="details.html">Details</a></li>
+                                <li><a href="login.php">Login</a></li>
+                                <li><a href="product.php">Products</a></li>
+                                <li><a href="details.php">Details</a></li>
                                 <li><a href="#">Contact</a></li>
-                                <li><a href="cart.html">Cart <i class="fa fa-shopping-cart"></i></a></li>
+                                <li><a href="cart.php">Cart <i class="fa fa-shopping-cart"></i></a></li>
                             </ul>
                         </div>
                     </div> 
@@ -69,11 +68,8 @@
                     <div class="desc">
                         <h2>CATEGORIES</h2>
                     </div>
-             
 
-                    
                         <div class="product-thumb">
-
                                                     
                             <div class="container"> 
                                 <img  src="img/frut.JPG" alt="Product Title"> 
@@ -105,13 +101,13 @@
                                 </div>
                             </div>
                             
-                           <div class="container" id="clth"> 
+                            <div class="container" id="clth">
                                 <img  src="img/glass.JPG " alt="Product Title" class="image">
                                 <div class="overlay overlayFade">
                                     <h2><a href="product.html">Fashion</a></h2>
                                 </div>
                            </div>
-                    </div>
+                        </div>
                         </div>
                  </div>
  

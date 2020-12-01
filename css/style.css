@@ -226,24 +226,23 @@ body {
 
 .shop-wrap-inside h1::before{
   content: 'Denver LTD.';
-  padding-top: 47px;
+  margin-top: 21px;
   position: absolute;
   right: 25%;
   width: 50%;
   height: 25%;
   top: 250px;
-  animation: animate 3s linear backwards;
+  animation: animate 2s linear backwards;
 }
 
 
 @keyframes animate{
   0%{
-      right: 30%
+      top: 3%
   }
-  60%{
-      right: -60%;
+  5%{
+      top: -5%;
   }
-
 }
 
 .shop-wrap-inside h1 span{
@@ -263,10 +262,17 @@ body {
 .purchase {
     text-align: center;
     margin-top: 45px;
+    background-color: #0F7CDD;
+    border-radius: 19px;
+    width: 130px;
+    margin-left: 550px;
+    padding: 10px;
+    
 }
 
 .purchase-button a {
     margin: 15px;
+    
 }
 
 .column-3{
